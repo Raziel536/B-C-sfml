@@ -25,9 +25,9 @@ public:
 	Bullet bullet;
 
 	sf::Sprite tank_Sprite;
-	void animate(const sf::Int64& time);
+	void animate(const float& time);
 	void collapse();
-	virtual void move(const sf::Int64& time) {}
+	virtual void move(const float& time) {}
 	void map_interaction(Map& map);
 	void tank_interaction();
 };
