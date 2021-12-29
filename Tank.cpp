@@ -26,7 +26,7 @@ Tank::Tank(const float& x, const float& y, const float& width, const float& heig
 	tank_Sprite.setPosition(x, y);
 }
 
-void Tank::animate(const sf::Int64& time)
+void Tank::animate(const float& time)
 {
 	tank_CurrentFrame += 0.005f * time;
 	if(tank_CurrentFrame >= 2)
